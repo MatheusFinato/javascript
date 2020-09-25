@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML CRUD WITH PURE JS
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Nome</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div>
+                            <label>e-mail</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div>
+                            <label>CPF/CNPJ</label>
+                            <input type="text" id="cnpjcpf" name="cpfcnpj">
+                        </div>
+                        <div>
+                            <label>Telefone</label>
+                            <input type="text" id="telefone" name="telefone">
+                        </div>
+                        <div>
+                            <label>CEP</label>
+                            <input type="text" id="cep" name="cep">
+                        </div>
+                        <div>
+                            <label>Logradouro</label>
+                            <input type="text" id="logradouro" name="logradouro">
+                        </div>
+                        <div>
+                            <label>Numero</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                        <div>
+                            <label>Bairro</label>
+                            <input type="text" id="bairro" name="bairro">
+                        </div>
+                        <div>
+                            <label>Cidade</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div>
+                            <label>Estado</label>
+                            <input type="text" id="estado" name="estado">
+                        </div>
+                        <div class="form-action-butons">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="Lista-de-Empregados">   
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>email</th>
+                                <th>CPF/CNPJ</th>
+                                <th>Telefone</th>
+                                <th>CEP</th>
+                                <th>Logradouro</th>
+                                <th>Número</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Estado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
